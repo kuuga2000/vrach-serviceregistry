@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: the-zecter-service-registry
+server:
+  port: 7449
+
+eureka:
+  instance:
+    hostname: localhost
+    envi: DEV
+    datacenter: SEA
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
