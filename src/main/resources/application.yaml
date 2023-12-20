@@ -2,7 +2,7 @@ spring:
   application:
     name: the-zecter-service-registry
 server:
-  port: 7449
+  port: 8761
 
 eureka:
   instance:
